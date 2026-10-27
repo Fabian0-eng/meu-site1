@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabiano dos Santos - Links</title>
+    
+    <!-- Link para o arquivo CSS separado -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Fonte externa (Inter) e Ícones (FontAwesome) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- Perfil: Foto e Nome -->
+        <div class="profile-header">
+            <img src="C:\Users\fsant\OneDrive\Imagens\Screenshots\alguém-sabe-qual-o-video-especifico-do-nomade-raiz-v0-el8ruaix5wif1.webp" alt="Foto de Fabiano dos Santos" class="profile-img">
+            <h1 class="profile-name">Fabiano dos Santos</h1>
+            <p class="profile-subtitle">Engenharia de Produção | UFF</p>
+        </div>
+
+        <!-- Botões de Links -->
+        <div class="buttons-container">
+            <button id="btn-lattes" class="btn btn-lattes">
+                <i class="fa-solid fa-graduation-cap"></i> Curriculum Lattes
+            </button>
+
+            <button id="btn-linkedin" class="btn btn-linkedin">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </button>
+
+            <button id="btn-insta" class="btn btn-insta">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const btnLattes = document.getElementById("btn-lattes");
+        const btnLinkedin = document.getElementById("btn-linkedin");
+        const btnInsta = document.getElementById("btn-insta");
+
+        btnLattes.onclick = function() {
+            window.open("https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K1244923H0", "_blank");
+        };
+
+        btnLinkedin.onclick = function() {
+            window.open("https://www.linkedin.com/in/fabiano-santos-6004a129a/", "_blank");
+        };
+
+        btnInsta.onclick = function() {
+            window.open("https://www.instagram.com/_fabian0ss/", "_blank");
+        };
+    </script>
+</body>
+</html>
